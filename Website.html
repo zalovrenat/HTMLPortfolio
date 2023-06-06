@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta name="description" content="A website about Renat Zalov">
+        <meta name="keywords" content="website, Renat, Zalov, Renat Zalov, biography">
+        <meta name="author" content="Renat Zalov">
+        <title>Renat's Personal Website</title>
+        <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #02162D;
+                color: white;
+                width: 100%;
+                min-height: 100px;
+                max-height: 100px;
+                position: sticky;
+                top: 0;
+            }
+
+            a.header {
+                padding: 15px;
+                margin: none;
+            }
+
+            a.header:link, a.header:visited {
+                font-family: Calibri, serif;
+                font-size: 24px;
+                color: white;
+                text-decoration: none;
+            }
+
+            a.header:hover{
+                font-family: Calibri, sans-serif;
+                font-size: 24px;
+                color: #1792F0;
+                text-decoration: none;
+            }
+
+            a.header:active{
+                font-family: Calibri, sans-serif;
+                font-size: 24px;
+                color: #1792F0;
+            }
+
+            h1 {
+                font-family: Georgia, serif;
+                font-size: 48px;
+                text-align: center;
+            }
+
+            h2 {
+                font-family: Calibri, sans-serif;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            h3 {
+                font-family: Calibri, sans-serif;
+                font-size: 24px;
+                text-align: center;
+            }
+
+            body {
+                font-family: Verdana, sans-serif;
+                font-size: 16px;
+            }
+
+            div.home {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                background-color: #02162D;
+                width: 100%;
+                min-height: 100vh;
+                max-height: 100vh;
+                /* padding-top: 100px; */
+                padding-left: 100px;
+                scroll-margin-top: 100px;
+            }
+
+            div.gray {
+                background-color: #EEEEEE;
+                width: 100%;
+                min-height: 400px;
+                padding: 25px 9.5vw;
+                box-sizing: border-box;
+                scroll-margin-top: 100px;
+            }
+
+            div.white {
+                background-color: #FFFFFF;
+                width: 100%;
+                min-height: 400px;
+                padding: 25px 10%;
+                box-sizing: border-box;
+                scroll-margin-top: 100px;
+            }
+
+            td, th {
+                border: 1px solid #ddd;
+                padding: 8px;
+                min-width: 27vw;
+                max-width: 27vw;
+                text-align: center;
+            }
+
+            th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: center;
+                background-color: #02162D;
+                color: white;
+            }
+
+            footer {
+                background-color: #02162D;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                min-height: 100px;
+                max-height: 100px;
+                color: white;
+                font-family: Calibri;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="#Home" class="header">Home</a> |
+            <a href="#About" class="header">About</a> |
+            <a href="#Hobbies" class="header">Hobbies</a> |
+            <a href="#WhyDevelopment" class="header">Why I Want to Become a Developer</a> |
+            <a href="#ContactMe" class="header">Contact Me</a>
+        </header>
+
+        <div class="home" id="Home">
+            <h3 style="color: white">Hello, my name is</h3>
+            <h2 style="color: white">Renat Zalov</h2>
+            <img src="Images/ProfilePic.jpg" alt="Profile Picture" style="height: 75vh; float: inline-end;">
+        </div>
+
+        <div class="white" id="About">
+            <h3>About</h3> <br><br>
+            <p>I am 30 years old. I am married, have two kids, and am an aspiring softrware developer.</p> <br>
+            <p>I was born in 1993 and moved to the United States with my family in 2000.</p> <br>
+            <p>I graduated from Phillips Academy Andover (high school) in 2011, from the University of Chicago (BA) in 2015, and from the University of Chicago Booth School of Business (MBA) in 2020.</p> <br>
+            <p>My day job is being a software pre-sales engineer.</p> <br>
+        </div>
+
+        <div class="gray" id="Hobbies">
+            <h3>Hobbies</h3> <br>
+            <table>
+                <tr>
+                    <th>Billiards</th>
+                    <th>Argentine Tango</th>
+                    <th>Soccer</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="Images/Billiards.jpg" alt="Playing Billiards" style="height: 50vh;">
+                    </td>
+                    <td>
+                        <video style="height: 50vh;" controls>
+                            <source src="Videos/Tango.mp4" alt="Tango Dance" type="video/mp4">
+                        </video>
+                    </td>
+                    <td>
+                        <img src="Images/Soccer2.jpg" alt="Soccer Tackle" style="height: 50vh;">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="white" id="WhyDevelopment">
+            <h3>Why I Want to Become a Developer</h3> <br>
+            <p>I want to become a developer for a few reasons:</p> <br>
+            <ol style="list-style-position: inside;">
+                <li>Personal interest in coding</li>
+                    <ul style="color: black; list-style-position: inside; text-indent: 50px;">
+                        <li>To be able to create something myself</li>
+                        <li>To better understand what it takes to build a full-stack application</li>
+                        <li>To continue studying something I enjoyed in college</li>
+                    </ul> <br>
+                <li>To become better at my job as a product manager</li> <br>
+                <li>To be able to contribute to the code base of the software company I started with my cousins</li>
+            </ol>
+        </div>
+
+        <div class="gray" id="ContactMe">
+            <h3>Contact Me</h3> <br>
+            <form action="" method="post">
+                <input type="text" id="fullname" placeholder="Your Full Name"> <br><br>
+                <input type="email" id="email" placeholder="Your E-Mail Address"> <br><br>
+                <input type="textarea" id="message" placeholder="Your Message..." wrap="virtual" style="min-height: 150px; max-height: 200px; min-width: 400px; max-width: 400px;"> <br><br>
+                <input type="submit" id="submit" onclick="alert('Thank you for submitting your message!')">
+            </form>
+        </div>
+
+        <footer>
+            &copy; Copyright 2023 | Renat Zalov
+        </footer>
+    </body>
+</html>
